@@ -9,7 +9,7 @@ void str_del(char *s1,int id, int len)
     {
         l++;
     }
-    char *temp = (char*)malloc(l*sizeof(char));
+    char *temp = (char*)malloc((l+1)*sizeof(char));
     for(int k = 0;s1[k]!='\0';k++)
     {
         temp[k] = s1[k];
@@ -20,11 +20,11 @@ void str_del(char *s1,int id, int len)
         s1[i] = temp[i];
     }
     int k,j = id-1;
-    for(k = id+len-1;temp[j]!='\0';k++)
+    for(k = id+len-1;temp[k]!='\0';k++)
     {
         s1[j++] = temp[k];
     }
-    s1[k] = '\0';
+    s1[j] = '\0';
 }
 int main()
 {
