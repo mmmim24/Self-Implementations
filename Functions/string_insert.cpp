@@ -8,7 +8,7 @@ void str_insrt(char *txt,int position, char *str)
     for(k = 0;txt[k]!=0;k++)
         len++;
     k=0;
-    char  *temp = (char*)malloc(len*sizeof(char));
+    char  *temp = (char*)malloc(1000*sizeof(char));
     for(k = 0;txt[k]!=0;k++)
     {
         temp[k] = txt[k];

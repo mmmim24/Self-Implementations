@@ -1,5 +1,5 @@
 ///function str_rplc(text,position,string)
-/// replaces string 
+/// replaces string from position
 #include<bits/stdc++.h>
 using namespace std;
 void str_rplc(char *s1,int id, char *s2)
